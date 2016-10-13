@@ -28,11 +28,17 @@ int main() {
 		{
 			for(int j = 1; j <= width; j++)
 			{
-				if(tree[i][j] == 'T' && (tree[i-1][j] == '.' || tree[i+1][j] == '.' || tree[i][j-1] == '.' || tree[i][j+1] == '.')) {
+				if(tree[i][j] == 'T' && (tree[i-1][j] == '.' ||
+                                         tree[i+1][j] == '.' ||
+                                         tree[i][j-1] == '.' ||
+                                         tree[i][j+1] == '.')) {
 					tree[i][j] = k + '0';
 					swapMade = true;
 					}
-				if(tree[i][j] == 'T' && (tree[i-1][j] == k + '0' - 1 || tree[i+1][j] == k + '0' - 1 || tree[i][j-1] == k + '0' - 1 || tree[i][j+1] == k + '0' - 1)) {
+				if(tree[i][j] == 'T' && (tree[i-1][j] == k + '0' - 1 ||
+                                         tree[i+1][j] == k + '0' - 1 ||
+                                         tree[i][j-1] == k + '0' - 1 ||
+                                         tree[i][j+1] == k + '0' - 1)) {
 					tree[i][j] = k + '0';
 					swapMade = true;
 				}
@@ -52,16 +58,17 @@ int main() {
 				}
 			}
 			else {
-                                if(tree[i][j] == '.') {
-                                        cout << "...";
-                                }
-                                else {
-					if(int(tree[i][j] - '0') >= 10)
-                                        cout << '.' << int(tree[i][j] - '0');
-					else
-					cout << ".." << int(tree[i][j] - '0');
-                                }
-
+                if(tree[i][j] == '.') {
+                    cout << "...";
+                }
+                else {
+					if(int(tree[i][j] - '0') >= 10) {
+                        cout << '.' << int(tree[i][j] - '0');
+                    }
+					else {
+                        cout << ".." << int(tree[i][j] - '0');
+                    }
+                }
 			}
 		}
 		cout << '\n';

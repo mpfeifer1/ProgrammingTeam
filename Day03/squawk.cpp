@@ -10,7 +10,6 @@ struct Node {
 };
 
 int main() {
-
  	int users, links, start, time;
  	vector<Node*> u; // Users
  	cin >> users >> links >> start >> time;
