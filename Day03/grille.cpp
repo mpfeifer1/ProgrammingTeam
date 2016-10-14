@@ -3,25 +3,25 @@
 using namespace std;
 
 void rotate(char grille[10][10], int size) {
-	char rotated[10][10];
-	for(int i = 0; i < size; i++) {
-		for(int j = 0; j < size; j++) {
-			rotated[j][size-i-1] = grille[i][j];
-		}
-	}
+    char rotated[10][10];
+    for(int i = 0; i < size; i++) {
+        for(int j = 0; j < size; j++) {
+            rotated[j][size-i-1] = grille[i][j];
+        }
+    }
 
-	for(int i = 0; i < size; i++) {
-		for(int j = 0; j < size; j++) {
-			grille[i][j] = rotated[i][j];
-		}
-	}
+    for(int i = 0; i < size; i++) {
+        for(int j = 0; j < size; j++) {
+            grille[i][j] = rotated[i][j];
+        }
+    }
 
-	return;
+    return;
 }
 
 bool isValid(char grille[10][10], int size) {
-	char marked[10][10] = {0};
-	for(int k = 0; k < 4; k++) {
+    char marked[10][10] = {0};
+    for(int k = 0; k < 4; k++) {
         for(int i = 0; i < size; i++) {
             for(int j = 0; j < size; j++) {
                 if(grille[i][j] == '.') {
@@ -44,7 +44,6 @@ bool isValid(char grille[10][10], int size) {
 	}
 
 	return true;
-
 }
 
 void print(char grille[10][10], int size) {
