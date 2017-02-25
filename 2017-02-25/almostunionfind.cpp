@@ -42,6 +42,10 @@ int main() {
                 int num1, num2;
                 cin >> num1 >> num2;
 
+                if(num1 == num2) {
+                    continue;
+                }
+
                 Node* node1 = nodes[num1-1];
                 Node* node2 = nodes[num2-1];
 
