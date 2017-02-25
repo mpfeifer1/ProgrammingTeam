@@ -1,0 +1,28 @@
+split bananarama into a lot of suffixes, 
+bananarama
+ananarama
+nanarama
+anarama
+narama
+arama
+rama
+ama
+ma
+a
+
+and then upload all of these into a trie like ususal
+end of each leaf contains its starting position in text
+
+You can shorten non-branching stems into a single edge
+This is a sufix tree instead of a suffix trie
+
+Suffix array - want a fast substring search, and pull it out in-context
+    This is how Google makes a living...
+
+Suffix sort: Create all the suffixes like above, then do a lexicographical sort
+on all strings in the list, as this draws together suffixes.
+This is log(N) on the length of the text as you can use binary search
+
+This is huge for things like genomes because you can find long repeated strings
+Also useful in cryptology so that you can find patterns
+Also handy in data compression as you can compress large chunks

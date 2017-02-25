@@ -2,41 +2,55 @@
 #include <cmath>
 
 using namespace std;
-bool isPrime(unsigned long long num) {
-    for(int i = 2; i <= sqrt(num); i++) {
-        if(num%i == 0) {
-            return false;
-        }
-    }
-    return true;
-}
 
 int main() {
-    unsigned long long temp;
-    cin >> temp;
-    if(temp == 0) {
-        return 0;
-    }
-
+    long long n, m, b;
+    cin >> n;
     do {
-        bool printedstuff = false;
-        if(temp > 10 && isPrime(temp-3)) {
-            cout << (temp-3) << endl;
-            printedstuff = true;
+
+        if(n == 0) {
+            return 0;
+        }
+    
+        n -= 3;
+        m = n;
+        if(fmod(sqrt(n), 1) == 0) {
+            m = sqrt(n);
         }
 
-        for(unsigned long long i = 2; i < temp + 4 && !printedstuff; i++) {	
-            if(temp % i == 3) {
-                if(!printedstuff) {
-                    cout << i << endl;
-                }
-                printedstuff = true;
+        if(n == 0) {
+            cout << 4 << endl << endl;
+        }
+        else if(n < 4) {
+            cout << "No such base" << endl << endl;
+        }
+
+        else if(n % 4 == 0) {
+            cout << 4 << endl << endl;
+        }
+        else if(n % 6 == 0) {
+            cout << 6 << endl << endl;
+        }
+        else if(n % 9 == 0) {
+            cout << 9 << endl << endl;
+        }
+
+
+        else {
+            while(m % 2 == 0) {
+                m /= 2;
             }
+            while(m % 3 == 0) {
+                m /= 3;
+            }
+            cout << m << endl << endl;
         }
 
-        if(!printedstuff) {
-            cout << "No such base" << endl;
+        b = 4;
+        while(n % b) {
+            b++;
         }
-        cin >> temp;
-    } while(temp != 0);
+        cout << n/b << endl;
+
+    } while(cin >> n);
 }

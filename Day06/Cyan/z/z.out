@@ -1,0 +1,44 @@
+Case 1: The next prime after 10 is 11.
+
+Case 2: The next prime after 20 is 23.
+
+Case 3: The next prime after -1 is 2.
+
+Case 4: The next prime after 10005671894 is 10005671911.
+
+Case 5: The next prime after -5 is 2.
+
+Case 6: The next prime after -4 is 2.
+
+Case 7: The next prime after -3 is 2.
+
+Case 8: The next prime after -2 is 2.
+
+Case 9: The next prime after -1 is 2.
+
+Case 10: The next prime after 0 is 2.
+
+Case 11: The next prime after 1 is 2.
+
+Case 12: The next prime after 2 is 3.
+
+Case 13: The next prime after 3 is 5.
+
+Case 14: The next prime after 45 is 47.
+
+Case 15: The next prime after 5 is 7.
+
+Case 16: The next prime after 6 is 7.
+
+Case 17: The next prime after 7 is 9.
+
+Case 18: The next prime after 8 is 9.
+
+Case 19: The next prime after 9 is 11.
+
+Case 20: The next prime after 10 is 11.
+
+Case 21: The next prime after 40000000000000 is 40000000000001.
+
+Case 22: The next prime after 40000000000001 is 40000000000013.
+

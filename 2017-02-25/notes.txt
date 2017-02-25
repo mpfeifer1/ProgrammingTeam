@@ -1,0 +1,11 @@
+Nearest Neighbor Search
+
+Lossy Compression
+
+K-D tree is logic behind this
+    Nearest neighbor search
+    Range queries
+    Fast lookup
+
+Disjoint Sets
+    Used for finding connectivity in graphs

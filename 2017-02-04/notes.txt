@@ -1,0 +1,14 @@
+Segment Trees
+
+array arr
+3 operations
+    change value at index
+    change range of values
+    calculate sum of range
+
+segment trees work for any range query (minimum, max, sum, etc...)
+
+It is a literal tree
+nodes are sum of children
+
+

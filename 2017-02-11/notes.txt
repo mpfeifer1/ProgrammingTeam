@@ -1,0 +1,27 @@
+Trie
+
+the
+then
+therefore
+at
+am
+
+Everything starts null
+Use a map, and an array of pointers
+Add: Add pointer for T
+
+Each node is a map of pointers
+
+Basically a spell-checker data structure
+It's a tree that doesn't have the complete key
+Tries have more nodes
+
+Any data can be typecasted to an array of bytes, then stored in a trie
+These can replace hash tables very well, doesn't need a "perfect hash" becasue it can't have collisions
+No need to change hash / resize table
+Good for finding substrings
+
+Three basic operations
+    Insert
+    FindWord
+    FindPrefixes
