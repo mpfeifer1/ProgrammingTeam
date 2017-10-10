@@ -21,16 +21,24 @@ int main() {
     while(cin >> integers && cin >> commands) {
         vector<Group*> groups;
         vector<Node*> nodes;
+
+
+
         for(int i = 1; i <= integers; i++) {
             Node* n = new Node();
-            n->index = i;
-            nodes.push_back(n);
             Group* g = new Group();
-            g->nodes.push_back(n);
-            groups.push_back(g);
-            g->sum += i;
+
+            n->index = i;
             n->g = g;
+            nodes.push_back(n);
+
+            g->nodes.push_back(n);
+            g->sum += i;
+            groups.push_back(g);
         }
+
+
+
         for(int i = 0; i < commands; i++) {
             int command;
             cin >> command;
